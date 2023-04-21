@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+
+body {
+    font-family:'Alfa Slab One', cursive;
+    background-color: #362FD9;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 150px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.subtitulo {
+    color: rgb(8, 0, 48);
+    font-size: 20px;
+}
+
+
+.tarjetas, tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-CovenChaos {
+    width: 180px;
+    height: 100px;
+    background: aqua;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-CovenChaos img {
+    width: 74px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: slateblue;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #FF78F0;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.boton-de-ataque {
+    background-color:aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#mensajes {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: transparent;
+    color: blue
+    
+}
+
+.poderes {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color:black
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+
+}
+
+.poderes-jugador, .poderes-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .tarjetas, .tarjetas-poderes {
+       flex-direction: column;
+ }
+}
